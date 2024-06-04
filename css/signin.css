@@ -1,0 +1,16 @@
+:root{--bg-color:#B6B6B6;
+    --btn-color:#DB4437;
+    --bld-color:#707070;
+    --secondary-color:#ffffff;
+    --tertiary-color:#000;}
+
+
+.bgcolour{background-color: var(--secondary-color);}
+
+.bgcolourform{border: 1px solid var(--bld-color);
+              }
+
+
+.heightadjust{height: 100vh;}
+
+.colourunderline{color:var(--bld-color) ;}
