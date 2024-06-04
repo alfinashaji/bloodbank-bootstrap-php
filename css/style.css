@@ -164,6 +164,48 @@
 .img{height:49px;}
 
 .imageblood{width:30px;}
+
+.carousel-wrap {
+      
+      padding: 0 5%;
+      width: 80%;
+      position: relative;
+    }
+    
+    /* fix blank or flashing items on carousel */
+    .owl-carousel .item {
+      position: relative;
+      z-index: 100; 
+      backface-visibility: hidden; 
+    }
+    
+    /* end fix */
+    .owl-nav > div {
+      margin-top: -26px;
+      position: absolute;
+      top: 50%;
+      color: #cdcbcd;
+    }
+    
+    .owl-nav i {
+      font-size: 52px;
+    }
+    
+    .owl-nav .owl-prev {
+      left: -30px;
+    }
+    
+    .owl-nav .owl-next {
+      right: -30px;
+    }
+
+    .owl-carousel .owl-item img {
+      display: block;
+      width: auto;
+      -webkit-transform-style: preserve-3d;}
+
+
+.boxarrangement{border: 1px solid #DB4437;}
       
 
 
