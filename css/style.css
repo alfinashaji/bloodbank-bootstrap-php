@@ -209,3 +209,8 @@
       
 
 
+.footertext{font-family:semibold;
+            color: var(--secondary-color);}
+
+
+.bgcolorapply{background-color: var(--btn-color);}
