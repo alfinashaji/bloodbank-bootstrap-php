@@ -18,10 +18,12 @@
                 Home </a><a
                     href="dashboard.html" class="dashboard-nav-item active"><i class="fas fa-tachometer-alt"></i> dashboard
             </a>
+              
+                  
                 
-                    
+                   
                 <div class='dashboard-nav-dropdown'><a href="#!" class="dashboard-nav-item dashboard-nav-dropdown-toggle"><i
-                  class="fas fa-users"></i></i>Registration</a>
+                  class="fas fa-users"></i>Registration</a>
                     <div class='dashboard-nav-dropdown-menu'><a href="#"
                                                                 class="dashboard-nav-dropdown-item">All</a><a
                             href="donor.html" class="dashboard-nav-dropdown-item">Donor Registration</a><a
@@ -54,7 +56,7 @@
             
             <div class='dashboard-content baggroundcolorarrange marginadjust'>
                 <div class='container baggroundcolorarrange'>
-                  <p class="ms-5 textarrangement">Dononor Registration Admin Page</p>
+                  <p class="ms-5 textarrangement">Dononor Request Admin Page</p>
                   <div class=" ms-5 mt-1 bagr">
                         <symbol id="check" viewBox="0 0 16 16">
                           <title>Check</title>
@@ -69,15 +71,15 @@
                           <table class="table table-striped table-hover table-borderless w-100 col-12 rounded-4 overflow-hidden" id="index">
                             <thead>
                               <tr>
-                                  <th>Name</th>
+                                  
                                   <th>location</th>
-                                  <th>age</th>
+                                  
                                   <th>blood group</th>
                                   <th>mobile number</th>
-                                  <th>email</th>
-                                  <th>health details</th>
+                                 
+                                  
                                   <th>otp</th>
-                                  <th>date of birth</th>
+                                 
                                   <th>Status</th>
                                   <th>action</th>
                               </tr>
@@ -119,7 +121,7 @@
                       
                   
                       ajax:
-                        "data/blooddonor.json",
+                        "requestdonordata/bloodrequest.json",
                   
                       dom:
                         "<'row'<'col-sm-12 col-md-6 ps-4 mt-3'l><'col-sm-12 col-md-6 pe-4 mt-3 d-flex justify-content-end'f>>" +
@@ -214,10 +216,10 @@
               
               // target 9 start
                         {
-                         targets:9,
+                         targets:4,
                          render: function (data, type, row, meta) {
                          if (type === "display"){
-                          return ('<div class="form-check form-switch"><input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked></div>'
+                          return ('<div class="form-check form-switch d-flex justify-content-evenly"><input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked></div>'
                           );
                          } else {
                           return data;}
@@ -229,7 +231,7 @@
               // target 9 end
               
                         {
-                          targets: 10,
+                          targets: 5,
                           render: function (data, type, row, meta) {
                             if (type === "display") {
                               return ('<div class="dropdown"><i class="fa-solid fa-ellipsis" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"></i><ul class="dropdown-menu"><li><a class="dropdown-item" href="#"><i class="fa fa-pencil"></i>Edit</a></li><li><a class="dropdown-item" href="#"><i class="fa fa-trash-o"></i>Delete</a></li></ul></div>'
