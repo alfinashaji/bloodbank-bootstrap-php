@@ -8,11 +8,11 @@
     <link href="css/main.css" rel="stylesheet" type="text/css"/>
   </head>
   <body>
-    <div class="container bgcolour">
-        <div class="row justify-content-center align-items-center heightadjust">
+    <div class="container bgcolour mainwrapper">
+        <div class="row justify-content-center align-items-center heightadjust h-100">
         <div class="col col-sm-6 col-md-6 col-lg col-xl-6 col-xxl-6">
-            <div class="col py-5 ps-4 pe-4 rounded-5 border border-success border-opacity-10 form">
-                <h4 class="text1 text-center">SIGN IN</h4>
+            <div class="col py-5 ps-4 pe-4 rounded-5 border border-success border-opacity-10 formcolour">
+                <h4 class="text1 text-center textsignin">Admin Login</h4>
         <form>
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label fontstype">Phone</label>
@@ -20,22 +20,11 @@
             </div>
             
             <div class="d-grid gap-2 pt-4">
-                <button class="btn formarrangement colourselect submitbtn fontstype" type="button">Send OTP</button>
+                
+                    <button class="btn btn-primary py-2" type="button">OTP</button>
                 </div>
           </form>
-          <div class="row pt-5">
-            <div class="col-auto me-auto">
-          <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-0-hover colourunderline fontstype" href="#">
-            New Registration
-          </a>
-        </div>
-        <div class="col-auto">
-          <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-0-hover colourunderline fontstype" href="#">
-            Back to home
-          </a>
-        </div>
-        </div>
-        </div>
+         
       
 
         </div>
